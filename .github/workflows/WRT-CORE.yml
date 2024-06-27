@@ -146,12 +146,6 @@ jobs:
           cd ./wrt/
           $GITHUB_WORKSPACE/Scripts/diy.sh
 
-      - name: Custom Packages
-        run: |
-          cd ./wrt/package/
-
-          
-          $GITHUB_WORKSPACE/Scripts/preset-clash-core.sh
 
       - name: Custom Settings
         run: |
