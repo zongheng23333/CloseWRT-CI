@@ -25,6 +25,7 @@ UPDATE_PACKAGE "design-config" "gngpp/luci-app-design-config" "master"
 UPDATE_PACKAGE "argon" "jerrykuku/luci-theme-argon" "master"
 UPDATE_PACKAGE "argon-config" "jerrykuku/luci-app-argon-config" "master"
 UPDATE_PACKAGE "frp" "kuoruan/luci-app-frpc" "master"
+UPDATE_PACKAGE "frpc" "kuoruan/openwrt-frp" "v0.42.0-1" 
 
 #更新软件包版本
 UPDATE_VERSION() {
@@ -49,4 +50,4 @@ UPDATE_VERSION() {
 
 #UPDATE_VERSION "软件包名" "项目地址" "测试版，true，可选，默认为否"
 UPDATE_VERSION "sing-box" "SagerNet/sing-box" "true"
-UPDATE_VERSION "frpc" "kuoruan/openwrt-frp" "v0.42.0-1"  "true"
+
