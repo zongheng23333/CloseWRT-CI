@@ -24,8 +24,6 @@ UPDATE_PACKAGE "design" "gngpp/luci-theme-design" "js"
 UPDATE_PACKAGE "design-config" "gngpp/luci-app-design-config" "master"
 UPDATE_PACKAGE "argon" "jerrykuku/luci-theme-argon" "master"
 UPDATE_PACKAGE "argon-config" "jerrykuku/luci-app-argon-config" "master"
-UPDATE_PACKAGE "luci-app-frpc" "kuoruan/luci-app-frpc" "master"
-UPDATE_PACKAGE "frp" "kuoruan/openwrt-frp" "v0.42.0-1" 
 
 #更新软件包版本
 UPDATE_VERSION() {
