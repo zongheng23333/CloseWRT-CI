@@ -19,6 +19,8 @@ UPDATE_PACKAGE() {
 		mv -f $REPO_NAME $PKG_NAME
 	fi
 }
+UPDATE_PACKAGE "luci-app-frpc" "kuoruan/luci-app-frpc" "master"
+UPDATE_PACKAGE "frp" "kuoruan/openwrt-frp" "v0.42.0-1" 
 
 UPDATE_PACKAGE "design" "gngpp/luci-theme-design" "js"
 UPDATE_PACKAGE "design-config" "gngpp/luci-app-design-config" "master"
