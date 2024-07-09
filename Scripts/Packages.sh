@@ -19,6 +19,13 @@ UPDATE_PACKAGE() {
 		mv -f $REPO_NAME $PKG_NAME
 	fi
 }
+rm -rf feeds/luci/applications/luci-app-frpc
+
+
+rm -rf  feeds/packages/net/frp
+
+
+
 UPDATE_PACKAGE "luci-app-frpc" "kuoruan/luci-app-frpc" "master"
 UPDATE_PACKAGE "frp" "kuoruan/openwrt-frp" "v0.42.0-1" 
 
