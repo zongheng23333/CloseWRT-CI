@@ -1,4 +1,9 @@
 #!/bin/bash
+FRP_VERSION=$( echo $FRP_URL | awk -F '/' '{print $8}' | awk '{gsub(/v/,"");print $1}' )
+FRP_HASH=$( curl -sL https://codeload.github.com/fatedier/frp/tar.gz/v0.51.3 | sha256sum | awk -F ' ' '{print $1}' )
+
+
+
  sed -i '$a src-git smpackage https://github.com/kenzok8/small-package' feeds.conf.default
 ./scripts/feeds update -a 
 rm -rf feeds/luci/applications/luci-app-openclash
@@ -13,10 +18,11 @@ git clone --depth=1 --single-branch --branch   v0.42.0-1  "https://github.com/ku
 
 rm -rf feeds/luci/applications/luci-app-frpc
 
-git clone https://github.com/kuoruan/luci-app-frpc feeds/smpackage/luci-app-frpc
+git clone https://github.com/kuoruan/luci-app-frpc       feeds/luci/applications/luci-app-frpc
 sed -i -e 's/\tlocal frp_version=.*/\tlocal frp_version='''$FRP_VERSION'''/' feeds/luci/applications/luci-app-frpc/root/etc/init.d/frp
 
-rm -rf feeds/luci/applications/luci-app-multi-frpc
-git clone  https://github.com/justice2001/luci-app-multi-frpc  feeds/packages/luci-app-frpc
+
 ./scripts/feeds install -a  
 
+make package/luci-app-frpc/clean
+make package/luci-app-frpc/compile V=s
