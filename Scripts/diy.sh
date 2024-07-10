@@ -25,4 +25,3 @@ sed -i -e 's/\tlocal frp_version=.*/\tlocal frp_version='''$FRP_VERSION'''/' fee
 ./scripts/feeds install -a  
 
 make package/luci-app-frpc/clean
-make package/luci-app-frpc/compile V=s
