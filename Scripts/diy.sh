@@ -14,5 +14,7 @@ rm -rf feeds/luci/applications/luci-app-frpc
 git clone https://github.com/kuoruan/luci-app-frpc feeds/luci/applications/luci-app-frpc
 sed -i -e 's/\tlocal frp_version=.*/\tlocal frp_version='''$FRP_VERSION'''/' feeds/luci/applications/luci-app-frpc/root/etc/init.d/frp
 
+
+git clone --depth=1 --single-branch --branch   main   https://github.com/justice2001/luci-app-multi-frpc   feeds/luci/applications/luci-app-multi-frpc
 ./scripts/feeds install -a  
 
