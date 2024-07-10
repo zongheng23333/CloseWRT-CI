@@ -1,6 +1,4 @@
 #!/bin/bash
-FRP_VERSION=$( echo $FRP_URL | awk -F '/' '{print $8}' | awk '{gsub(/v/,"");print $1}' )
-FRP_HASH=$( curl -sL https://codeload.github.com/fatedier/frp/tar.gz/v0.51.3 | sha256sum | awk -F ' ' '{print $1}' )
 
 
 
@@ -24,4 +22,4 @@ sed -i -e 's/\tlocal frp_version=.*/\tlocal frp_version='''$FRP_VERSION'''/' fee
 
 ./scripts/feeds install -a  
 
-make package/luci-app-frpc/clean
+make clean 
