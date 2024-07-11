@@ -155,6 +155,9 @@ jobs:
 
           cat $GITHUB_WORKSPACE/Config/$WRT_TARGET.txt $GITHUB_WORKSPACE/Config/General.txt $GITHUB_WORKSPACE/Config/Package.txt >> .config
           $GITHUB_WORKSPACE/Scripts/Settings.sh
+          rm -rf feeds/luci/applications/luci-app-frpc
+          git clone https://github.com/kuoruan/luci-app-frpc       package/luci-app-frpc
+          make menuconfig 
 
           make defconfig
 
@@ -162,8 +165,6 @@ jobs:
         if: env.WRT_CFG == 'false'
         run: |
           cd ./wrt/
-
-          make menuconfig 
           make download -j$(nproc)
 
       - name: Compile Firmware
