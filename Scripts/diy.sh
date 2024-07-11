@@ -1,5 +1,4 @@
 #!/bin/bash
-sed -i '1i src-git mult https://github.com/justice2001/luci-app-multi-frpc' feeds.conf.default
 sed -i '2i src-git smpackage https://github.com/kenzok8/small-package' feeds.conf.default
 echo >> feeds.conf.default
 
@@ -17,7 +16,7 @@ git clone --depth=1 --single-branch --branch   v0.42.0-1  "https://github.com/ku
 
 rm -rf feeds/luci/applications/luci-app-frpc
 git clone --depth=1 --single-branch --branch   main  "https://github.com/justice2001/luci-app-multi-frpc"  feeds/luci/applications/luci-app-frpc
-git clone --depth=1 --single-branch --branch   main  "https://github.com/justice2001/luci-app-multi-frpc"    package/justice2001/luci-app-multi-frpc
+
  
 ./scripts/feeds install -a  
 
