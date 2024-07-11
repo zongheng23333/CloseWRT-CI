@@ -15,6 +15,6 @@ rm -rf  feeds/packages/net/frp
 git clone --depth=1 --single-branch --branch   v0.42.0-1  "https://github.com/kuoruan/openwrt-frp" feeds/packages/net/frp
 git clone --depth=1 --single-branch --branch   v0.42.0-1  "https://github.com/kuoruan/openwrt-frp" feeds/smpackage/frp
 
-
+rm -rf feeds/luci/applications/luci-app-frpc
 
 ./scripts/feeds install -a  
