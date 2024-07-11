@@ -8,10 +8,10 @@ rm -rf feeds/luci/applications/luci-app-openclash
 cp -rf feeds/smpackage/luci-app-openclash   feeds/luci/applications/luci-app-openclash
 
 
-git clone --depth=1 --single-branch --branch   v0.42.0-1  "https://github.com/kuoruan/openwrt-frp" package/zongheng/frp
-#git clone --depth=1 --single-branch --branch   main  "https://github.com/justice2001/luci-app-multi-frpc" package/zongheng/luci-app-multi-frpc
+git clone --depth=1 --single-branch --branch   v0.42.0-1  "https://github.com/kuoruan/openwrt-frp"      package/zongheng/frp
+git clone --depth=1 --single-branch --branch   main  "https://github.com/yhl452493373/luci-app-frpc"    package/zongheng/lluci-app-frpc
 
-git clone --depth=1 --single-branch --branch master   "https://github.com/kuoruan/luci-app-frpc"      package/zongheng/luci-app-frpc
+#git clone --depth=1 --single-branch --branch master   "https://github.com/kuoruan/luci-app-frpc"       package/zongheng/luci-app-frpc
 
  
 ./scripts/feeds install -a  
