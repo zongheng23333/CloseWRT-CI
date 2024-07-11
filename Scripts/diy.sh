@@ -14,7 +14,7 @@ git clone --depth=1 --single-branch --branch   v0.42.0-1  "https://github.com/ku
 
 
 
-git clone   https://github.com/justice2001/luci-app-multi-frpc       package/luci-app-multi-frpc
+
 
 
 ./scripts/feeds install -a  
