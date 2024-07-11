@@ -13,8 +13,6 @@ git clone --depth=1 --single-branch --branch   v0.42.0-1  "https://github.com/ku
 git clone --depth=1 --single-branch --branch   v0.42.0-1  "https://github.com/kuoruan/openwrt-frp" feeds/smpackage/frp
 
 
-rm -rf feeds/luci/applications/luci-app-frpc
-git clone https://github.com/kuoruan/luci-app-frpc        package/luci-app-frpc
 
 git clone   https://github.com/justice2001/luci-app-multi-frpc       package/luci-app-multi-frpc
 
