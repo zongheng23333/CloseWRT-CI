@@ -12,7 +12,7 @@ cp -rf feeds/smpackage/luci-app-openclash   feeds/luci/applications/luci-app-ope
 git clone https://github.com/yhl452493373/openwrt-frp.git     package/zongheng/frp
 
 
-git clone --depth=1 --single-branch --branch   main  "https://github.com/yhl452493373/luci-app-frpc"    package/zongheng/luci-app-frpc
+git clone --depth=1 --single-branch --branch   main  "https://github.com/simplebean/luci-app-frpc"    package/zongheng/luci-app-frpc
 #git clone --depth=1 --single-branch --branch   main  "https://github.com/justice2001/luci-app-multi-frpc"    package/zongheng/luci-app-multi-frpc
 #git clone --depth=1 --single-branch --branch master   "https://github.com/kuoruan/luci-app-frpc"       package/zongheng/luci-app-frpc
 
