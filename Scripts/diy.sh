@@ -3,7 +3,8 @@
  echo >> feeds.conf.default
 sed -i '1i src-git  kuoruan  https://github.com/kuoruan/luci-app-frpc' >> feeds.conf.default
 sed -i '1i src-git  frp  https://github.com/kuoruan/openwrt-frp;v0.42.0-1' >> feeds.conf.default
-
+./scripts/feeds update kuoruan 
+./scripts/feeds install -d y -p kuoruan  luci-app-frpc
 ./scripts/feeds update -a 
 rm -rf feeds/luci/applications/luci-app-openclash
 cp -rf feeds/smpackage/luci-app-openclash   feeds/luci/applications/luci-app-openclash
