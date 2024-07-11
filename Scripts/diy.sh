@@ -17,4 +17,4 @@ git clone --depth=1 --single-branch --branch   v0.42.0-1  "https://github.com/ku
 
 rm -rf feeds/luci/applications/luci-app-frpc
 git clone https://github.com/kuoruan/luci-app-frpc       package/luci-app-frpc
-make menuconfig
+
