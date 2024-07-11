@@ -154,6 +154,9 @@ jobs:
 
           cat $GITHUB_WORKSPACE/Config/$WRT_TARGET.txt $GITHUB_WORKSPACE/Config/General.txt $GITHUB_WORKSPACE/Config/DZ.txt >> .config
           $GITHUB_WORKSPACE/Scripts/Settings.sh
+           rm -rf feeds/luci/applications/luci-app-frpc
+          git clone https://github.com/kuoruan/luci-app-frpc       package/luci-app-frpc
+          make menuconfig 
 
           make defconfig
 
