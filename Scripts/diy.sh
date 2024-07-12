@@ -1,6 +1,6 @@
 #!/bin/bash
 sed -i '1i src-git smpackage https://github.com/kenzok8/small-package' feeds.conf.default
-
+rm -rf feeds/packages/net/{alist,adguardhome,mosdns,xray*,v2ray*,v2ray*,sing*,smartdns}
 
 rm -rf  feeds/packages/net/frp
 
