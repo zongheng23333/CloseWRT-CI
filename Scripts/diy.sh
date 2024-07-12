@@ -7,7 +7,7 @@ cp -rf feeds/smpackage/luci-app-openclash   feeds/luci/applications/luci-app-ope
 
 rm -rf feeds/packages/net/{alist,adguardhome,mosdns,xray*,v2ray*,v2ray*,sing*,smartdns}
 
- rm -rf feeds/luci/applications/luci-app-passwall
+rm -rf feeds/luci/applications/luci-app-passwall
 rm -rf  feeds/packages/net/frp
 rm -rf feeds/luci/applications/luci-app-frpc
 
