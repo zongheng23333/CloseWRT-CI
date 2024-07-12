@@ -48,5 +48,5 @@ UPDATE_VERSION() {
 }
 
 #UPDATE_VERSION "软件包名" "项目地址" "测试版，true，可选，默认为否"
-UPDATE_VERSION "sing-box" "SagerNet/sing-box" "true"
+
 
