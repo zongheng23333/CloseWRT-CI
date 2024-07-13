@@ -36,10 +36,10 @@ jobs:
       max-parallel: 3
       matrix:
         TARGET: [MTK-7981]
-        SOURCE: [Aabandon/immortalwrt-mt798x]
+        SOURCE: [hanwckf/immortalwrt-mt798x]
         include:
-          - SOURCE: Aabandon/immortalwrt-mt798x
-            BRANCH: test
+          - SOURCE: hanwckf/immortalwrt-mt798x
+            BRANCH: openwrt-21.02
             THEME: argon
 
 
