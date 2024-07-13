@@ -4,6 +4,7 @@ sed -i '1i src-git smpackage https://github.com/kenzok8/small-package' feeds.con
 ./scripts/feeds update -a 
 rm -rf feeds/packages/lang/golang
 git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
+
 rm -rf feeds/luci/applications/luci-app-openclash
 cp -rf feeds/smpackage/luci-app-openclash   feeds/luci/applications/luci-app-openclash
 
