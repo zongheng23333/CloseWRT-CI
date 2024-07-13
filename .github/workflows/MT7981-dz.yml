@@ -38,8 +38,8 @@ jobs:
         TARGET: [MTK-7981]
         SOURCE: [Aabandon/immortalwrt-mt798x]
         include:
-          - SOURCE: hanwckf/immortalwrt-mt798x
-            BRANCH: openwrt-21.02
+          - SOURCE: Aabandon/immortalwrt-mt798x
+            BRANCH: test
             THEME: argon
 
 
