@@ -16,7 +16,7 @@ UPDATE_PACKAGE() {
 		cp -rf $(find ./$REPO_NAME/*/ -maxdepth 3 -type d -iname "*$PKG_NAME*" -prune)   package/zongheng/$PKG_REPO
 		rm -rf ./$REPO_NAME/
 	elif
-		cp -rf   $PKG_REPO   package/zongheng/$PKG_REPO
+		mv -rf   $PKG_NAME   package/zongheng/$PKG_REPO
 	fi
 }
 
