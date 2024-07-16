@@ -15,7 +15,7 @@ UPDATE_PACKAGE() {
 	if [[ $PKG_SPECIAL == "pkg" ]]; then
 		cp -rf $(find ./$REPO_NAME/*/ -maxdepth 3 -type d -iname "*$PKG_NAME*" -prune)   package/zongheng/$PKG_REPO
 		rm -rf ./$REPO_NAME/
-	elif
+	else
 		mv -rf   $PKG_NAME   package/zongheng/$PKG_REPO
 	fi
 }
