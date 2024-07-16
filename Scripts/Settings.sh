@@ -31,3 +31,7 @@ echo "CONFIG_MTK_MEMORY_SHRINK_AGGRESS=$([[ $WRT_ADJUST == "true" ]] && echo "y"
 if [ -n "$WRT_PACKAGE" ]; then
 	echo "$WRT_PACKAGE" >> ./.config
 fi
+
+if [[ $WRT_URL != *"padavanonly"* ]]; then
+	echo "CONFIG_PACKAGE_luci-app-store=y" >> ./.config
+fi
