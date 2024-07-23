@@ -25,6 +25,9 @@ UPDATE_PACKAGE "argon" "jerrykuku/luci-theme-argon" "master"
 UPDATE_PACKAGE "design" "0x676e67/luci-theme-design" "js"
 UPDATE_PACKAGE "luci-app-homeproxy" "muink/luci-app-homeproxy" "master"
 
+
+UPDATE_PACKAGE "advancedplus" "VIKINGYFY/luci-app-advancedplus" "main"
+UPDATE_PACKAGE "kucat" "sirpdboy/luci-theme-kucat" "js"
 #更新软件包版本
 UPDATE_VERSION() {
 	local PKG_NAME=$1
