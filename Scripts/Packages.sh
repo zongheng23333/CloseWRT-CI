@@ -67,8 +67,6 @@ UPDATE_PACKAGE "xray"      "XTLS/Xray-core"  "v26.7.28"
 UPDATE_PACKAGE "sing-box"   "VIKINGYFY/packages"  "main" "pkg"
 UPDATE_PACKAGE "luci-app-homeproxy"   "VIKINGYFY/packages"  "main" "pkg"
 
-UPDATE_PACKAGE "Xray-core" "XTLS/Xray-core"    "main" 
-
 
 
 UPDATE_PACKAGE "ddns-go" "sirpdboy/luci-app-ddns-go" "main"
