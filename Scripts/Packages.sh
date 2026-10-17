@@ -63,7 +63,7 @@ UPDATE_PACKAGE "passwall" "Openwrt-Passwall/openwrt-passwall" "main" "pkg"
 UPDATE_PACKAGE "passwall2" "Openwrt-Passwall/openwrt-passwall2" "main" "pkg"
 
 
-git clone --depth=1 --single-branch --branch v26.10.10 "https://github.com/XTLS/Xray-core.git ./package/xray-core"
+git clone --depth=1 --single-branch --branch v26.10.10 "https://github.com/XTLS/Xray-core.git ./package/feeds/packages/xray-core"
 
 UPDATE_PACKAGE "vantage"      "anothaDev/luci-theme-vantage"   "main"
 
